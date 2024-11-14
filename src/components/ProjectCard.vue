@@ -1,38 +1,44 @@
 <script>
+
+
 export default {
     data() {
         return {
 
         }
     },
-    props:{
-
+    props: {
+        cards: {
+            type: Array,
+            required: true
+        }
     },
+
 }
 </script>
 <template>
-    <div class="card mb-3" v-for="singleProject in projectList" :key="singleProject.id">
+    <div class="card mb-3" v-for="cardItem in cards" :key="cardItem.id">
         <div class="card-body">
             <h5 class="card-title">
-                Title: {{ singleProject.title }}
+                Title: {{ cardItem.title }}
             </h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">
-                Author: {{ singleProject.author }}
+                Author: {{ cardItem.author }}
             </h6>
-            <p class="card-text">
-                Date: {{ singleProject.date }}
+            <p class="card-tesxt">
+                Date: {{ cardItem.date }}
             </p>
             <p class="card-text">
-                Status: {{ singleProject.status }}
+                Status: {{ cardItem.status }}
             </p>
             <p class="card-text">
-                Type: {{ singleProject.type.name }}
+                Type: {{ cardItem.type.name }}
             </p>
             <p class="card-text">
-                Technologies: {{ singleProject.technologies.name }}
+                Technologies: {{ cardItem.technologies.name }}
             </p>
             <p class="card-text">
-                Description: {{ singleProject.description }}
+                Description: {{ cardItem.description }}
             </p>
         </div>
     </div>
