@@ -37,28 +37,28 @@ export default {
                     </h2>
                 </div>
                 <div class="col-12">
-                    <div class="card" v-for="singleProject in projectList">
+                    <div class="card mb-3" v-for="singleProject in projectList" :key="singleProject.id">
                         <div class="card-body">
                             <h5 class="card-title">
-                                Card title
+                               Title: {{singleProject.title}}
                             </h5>
                             <h6 class="card-subtitle mb-2 text-body-secondary">
-                                Card author
+                                Author: {{singleProject.author}}
                             </h6>
                             <p class="card-text">
-                                date
+                                Date: {{singleProject.date}}
                             </p>
                             <p class="card-text">
-                                status
+                               Status: {{singleProject.status}}
                             </p>
                             <p class="card-text">
-                                type
+                                Type: {{singleProject.type.name}}
                             </p>
                             <p class="card-text">
-                                technologies
+                                Technologies: {{singleProject.technologies.name}}
                             </p>
                             <p class="card-text">
-                                description
+                                Description: {{singleProject.description}}
                             </p>
                         </div>
                     </div>
