@@ -8,5 +8,5 @@
 </template>
 
 <style lang="scss">
-  @use "../node_modules/bootstrap/scss/bootstrap.scss" as * ;
+  @use "bootstrap/scss/bootstrap.scss" as * ;
 </style>
