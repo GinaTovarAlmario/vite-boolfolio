@@ -18,7 +18,9 @@ export default {
 </script>
 
 <template>
-
+    <h1>
+        APPMAIN HELLOOO
+    </h1>
 </template>
 
 <style scoped lang="scss">
