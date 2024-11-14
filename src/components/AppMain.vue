@@ -4,28 +4,25 @@ export default {
     name: 'AppMain',
     data() {
         return {
-            projectList =[]
+            projectList :[],
         }
     },
     methods: {
         // metodo per recuperare i projects
         getProjects() {
-            axios.get('/user?ID=12345')
+            axios.get('http://127.0.0.1:8000/api/projects')
                 .then(function (response) {
-                    // handle success
-                    console.log(response);
+                    console.log(response.data.results);
                 })
                 .catch(function (error) {
-                    // handle error
                     console.log(error);
                 })
-                .finally(function () {
-                    // always executed
-                });
-
         }
-
     },
+    created(){
+        this.getProjects();
+
+    }
 }
 </script>
 
