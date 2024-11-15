@@ -3,11 +3,8 @@ export default {
     name: 'AppAbout',
     data() {
         return {
-            projectList :[],
+            
         }
-    },
-    components:{
-        ProjectCard,
     },
     methods: {
     }
