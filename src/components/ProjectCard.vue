@@ -34,8 +34,9 @@ export default {
             <p class="card-text">
                 Type: {{ cardItem.type.name }}
             </p>
-            <p class="card-text" v-for="tech in cardItem.technologies" :key="tech.id">
-                Technologies: {{ tech.name }}
+            <p class="card-text">
+                <!-- vorrei che fossero scritte uno accanto all'altra -->
+                Technologies: {{ cardItem.technologies.map(tech => tech.name).join(', ') }}
             </p>
             <p class="card-text">
                 Description: {{ cardItem.description }}
