@@ -34,8 +34,8 @@ export default {
             <p class="card-text">
                 Type: {{ cardItem.type.name }}
             </p>
-            <p class="card-text">
-                Technologies: {{ cardItem.technologies.name }}
+            <p class="card-text" v-for="tech in cardItem.technologies" :key="tech.id">
+                Technologies: {{ tech.name }}
             </p>
             <p class="card-text">
                 Description: {{ cardItem.description }}
