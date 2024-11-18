@@ -14,11 +14,11 @@ export default {
 <template>
    <header>
         <nav>
-            <ul>
-                <li>
+            <ul class="d-flex">
+                <li class="me-3">
                     link
                 </li>
-                <li>
+                <li class="me-3">
                     link
                 </li>
             </ul>
