@@ -12,24 +12,39 @@ export default {
 </script>
 
 <template>
-   <header>
-        <nav>
-            <ul class="d-flex justify-content-center">
-                <li class="me-3">
-                    <router-link :to="{name:'home'}">
-                        HomePage
-                    </router-link>
-                </li>
-                <li class="me-3">
-                    <router-link :to="{name:'about'}">
-                        Abou tUs
-                    </router-link>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <router-link :to="{ name: 'home' }" class="nav-link">
+                                HomePage
+                            </router-link>
+                        </li>
+                        <li class="nav-item">
+                        <li class="me-3">
+                            <router-link :to="{ name: 'about' }" class="nav-link">
+                                Abou tUs
+                            </router-link>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-   </header>
+    </header>
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>
