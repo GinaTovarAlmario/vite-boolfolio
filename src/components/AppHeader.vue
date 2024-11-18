@@ -23,22 +23,19 @@ export default {
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <router-link :to="{ name: 'home' }" class="nav-link">
+                            <router-link :to="{ name: 'home' }" aria-current="page" class="nav-link">
                                 HomePage
                             </router-link>
                         </li>
                         <li class="nav-item">
                         <li class="me-3">
-                            <router-link :to="{ name: 'about' }" class="nav-link">
+                            <router-link :to="{ name: 'about' }"aria-current="page" class="nav-link">
                                 Abou tUs
                             </router-link>
                         </li>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link disabled" aria-disabled="true">Projects List</a>
                         </li>
                     </ul>
                 </div>
