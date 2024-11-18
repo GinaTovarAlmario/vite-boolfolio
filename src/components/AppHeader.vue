@@ -16,7 +16,7 @@ export default {
         <nav>
             <ul class="d-flex justify-content-center">
                 <li class="me-3">
-                    link
+                    link header
                 </li>
                 <li class="me-3">
                     link
