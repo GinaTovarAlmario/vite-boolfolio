@@ -35,7 +35,9 @@ export default {
                         </li>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Projects List</a>
+                            <router-link :to="{ name: 'projects' }"aria-current="page" class="nav-link">
+                                Latest Projects
+                            </router-link>
                         </li>
                     </ul>
                 </div>
