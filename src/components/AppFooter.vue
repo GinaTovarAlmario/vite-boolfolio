@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'AppHeader',
+    name: 'AppFooter',
     data() {
         return {
         }
@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-   <header>
+   <footer>
         <nav>
             <ul class="d-flex justify-content-center">
                 <li class="me-3">
@@ -21,9 +21,15 @@ export default {
                 <li class="me-3">
                     link
                 </li>
+                <li class="me-3">
+                    link
+                </li>
+                <li class="me-3">
+                    link
+                </li>
             </ul>
         </nav>
-   </header>
+   </footer>
 </template>
 
 <style scoped lang="scss">
