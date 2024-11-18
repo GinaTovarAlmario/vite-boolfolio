@@ -16,6 +16,9 @@ import AppHeader from './components/AppHeader.vue';
 
 <template>
  <AppHeader />
+ <main>
+  CONTENUTI 
+ </main>
  <AppFooter />
 
 </template>

@@ -16,10 +16,14 @@ export default {
         <nav>
             <ul class="d-flex justify-content-center">
                 <li class="me-3">
-                    link header
+                    <router-link :to="{name:'home'}">
+                        HomePage
+                    </router-link>
                 </li>
                 <li class="me-3">
-                    link
+                    <router-link :to="{name:'about'}">
+                        Abou tUs
+                    </router-link>
                 </li>
             </ul>
         </nav>

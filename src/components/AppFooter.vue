@@ -16,16 +16,24 @@ export default {
         <nav>
             <ul class="d-flex justify-content-center">
                 <li class="me-3">
-                    link footer 
+                    <router-link>
+                        link footer
+                    </router-link> 
                 </li>
                 <li class="me-3">
-                    link
+                    <router-link>
+                        link footer
+                    </router-link> 
                 </li>
                 <li class="me-3">
-                    link
+                    <router-link>
+                        link footer
+                    </router-link> 
                 </li>
                 <li class="me-3">
-                    link
+                    <router-link>
+                        link footer
+                    </router-link> 
                 </li>
             </ul>
         </nav>
