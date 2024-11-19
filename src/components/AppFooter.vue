@@ -12,7 +12,7 @@ export default {
 </script>
 
 <template>
-   <footer>
+   <footer class="mt-4">
         <nav>
             <ul class="d-flex justify-content-center">
                 <li class="me-3">
