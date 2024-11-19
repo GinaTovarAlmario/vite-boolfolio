@@ -79,7 +79,8 @@ export default {
     <section class="col-12" id="project-list" v-else>
         <ProjectListCard v-for="projectItem in projectList" 
         :key="projectItem.id" 
-        :card="projectItem" />
+        :card="projectItem" 
+        @click="showSingleProject(projectItem.id)"/>
     </section>
     <section class="navigation">
         <nav>
