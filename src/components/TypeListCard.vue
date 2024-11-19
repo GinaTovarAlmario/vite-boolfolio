@@ -22,7 +22,7 @@ export default {
                 name: {{ typeObj.name }}
             </h5>
             <h6 class="card-subtitle mb-2 text-body-secondary">
-                id: {{ typeObj.id }}
+                type id: {{ typeObj.id }}
             </h6>
         </div>
     </div>
