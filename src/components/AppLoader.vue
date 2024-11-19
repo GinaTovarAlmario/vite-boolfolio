@@ -13,9 +13,12 @@ export default {
 <template>
     <div id="loader-cube">
         <div class="cube">
-            <div class="face">
-
-            </div>
+            <div class="face face-one"></div>
+            <div class="face face-two"></div>
+            <div class="face face-three"></div>
+            <div class="face face-four"></div>
+            <div class="face face-five"></div>
+            <div class="face face-six"></div>
         </div>
     </div>
 </template>
