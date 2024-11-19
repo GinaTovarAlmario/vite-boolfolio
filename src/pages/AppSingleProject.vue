@@ -40,8 +40,8 @@ export default {
 }
 </script>
 <template>
-    <h1>id_ {{ $route.params.id }}</h1>
-    <ProjectListCard :card = "singleProject" v-if="singleProject !== null"/> 
+    <ProjectListCard :card = "singleProject" v-if="loaded"/> 
+    <AppLoader v-else/>
 </template>
 
 <style scoped lang="scss">
