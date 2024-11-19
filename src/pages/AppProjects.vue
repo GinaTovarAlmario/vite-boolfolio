@@ -18,10 +18,12 @@ export default {
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-12 mt-3">
+                <div class="col-12 mt-3 text-center">
                     <h2>
                         Project List:
                     </h2>
+                </div>
+                <div class="col-8 m-auto">
                     <ProjectList/>
                 </div>
             </div>
