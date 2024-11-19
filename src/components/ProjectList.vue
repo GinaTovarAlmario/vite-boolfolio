@@ -7,6 +7,7 @@ export default {
     data() {
         return {
             projectList: [],
+            loaded:false,
         }
     },
     components: {
@@ -34,11 +35,11 @@ export default {
 </script>
 
 <template>
-    <section class="loader">
+    <section class="loader" v-if="">
         <AppLoader/>
     </section>
     <section class="col-12" id="project-list">
-        <ProjectListCard 
+        <ProjectListCard  v-else
         v-for="projectItem in projectList" 
         :key="projectItem.id" 
         :card="projectItem" />
