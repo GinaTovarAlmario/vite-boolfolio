@@ -1,4 +1,5 @@
 <script>
+import ProjectListCard from '../components/ProjectListCard.vue';
 export default {
     name: 'AppSinglePost',
     data() {
@@ -7,12 +8,15 @@ export default {
         }
     },
     methods: {
+    },
+    components:{
+        ProjectListCard,
     }
 
 }
 </script>
 <template>
-
+    <ProjectListCard />
 </template>
 
 <style scoped lang="scss">
