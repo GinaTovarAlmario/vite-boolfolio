@@ -9,8 +9,8 @@ export default {
             projectList: [],
             loaded: false,
             apiUrl: 'http://127.0.0.1:8000/api/projects',
-            lastPageNumber:1,
-            currentPageNumber:1,
+            lastPageNumber: 1,
+            currentPageNumber: 1,
         }
     },
     components: {
@@ -22,10 +22,10 @@ export default {
         getProjects(pageNumber) {
             axios.get(this.apiUrl, {
                 params: {
-                    page:pageNumber,
+                    page: pageNumber,
                 }
 
-                })
+            })
                 .then((response) => {
                     console.log(response.data.results.data);
                     this.projectList = response.data.results.data;
@@ -37,12 +37,15 @@ export default {
                     console.log(error);
                 })
         },
-        previousPage(){
-            // aggiorna
-            this.currentPageNumber++;
+        previousPage() {
+            if (this.currentPageNumber > 1) {
+                // aggiorna
+                this.currentPageNumber--;
+                this.getProjects(this.currentPageNumber);
+            }
 
         },
-        nextPage(){
+        nextPage() {
 
         }
     },
