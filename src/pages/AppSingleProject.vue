@@ -14,7 +14,7 @@ export default {
             axios.get(`${this.apiUrl}/${this.$route.params.id}`)
                 .then(function (response) {
                     // handle success
-                    console.log(response);
+                    console.log(response.data.results);
                     // this.singleProject = response.data;
                 })
                 .catch(function (error) {
