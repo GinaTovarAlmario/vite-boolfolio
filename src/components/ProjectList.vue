@@ -36,11 +36,11 @@ export default {
 </script>
 
 <template>
-    <section class="loader" v-if="">
+    <section class="loader" v-if="!loaded">
         <AppLoader/>
     </section>
-    <section class="col-12" id="project-list">
-        <ProjectListCard  v-else
+    <section class="col-12" id="project-list"  v-else>
+        <ProjectListCard 
         v-for="projectItem in projectList" 
         :key="projectItem.id" 
         :card="projectItem" />
