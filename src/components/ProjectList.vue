@@ -60,10 +60,10 @@ export default {
     computed:{
         
         firstPage(){
-            return this.currentPageNumber == 1;
+            return this.currentPageNumber === 1;
         },
         lastPage(){
-            return currentPageNumber >= lastPageNumber;
+            return this.currentPageNumber >= this.lastPageNumber;
         }
     }
 }
@@ -80,13 +80,15 @@ export default {
         <nav>
             <ul class="d-flex justify-content-between">
                 <li>
-                    <button class="btn btn-primary" @click="previousPage">
+                    <button class="btn btn-primary" @click="previousPage"
+                    :class="{ 'disabled': firstPage}">
+                    >
                         < Prev
                     </button>
                 </li>
                 <li>
                     <button class="btn btn-primary" @click="nextPage"
-                        :class="{ 'disabled': }">
+                        :class="{ 'disabled': lastPage}">
                         Next > 
                     </button>
                 </li>
