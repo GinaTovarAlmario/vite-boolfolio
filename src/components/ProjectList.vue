@@ -32,6 +32,9 @@ export default {
 </script>
 
 <template>
+    <section class="loader">
+
+    </section>
     <section class="col-12" id="project-list">
         <ProjectListCard 
         v-for="projectItem in projectList" 
