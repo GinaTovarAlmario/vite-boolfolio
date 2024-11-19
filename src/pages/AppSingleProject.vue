@@ -21,6 +21,9 @@ export default {
                 })
         }
     },
+    created(){
+        this.getSingleProject();
+    },
     components: {
         ProjectListCard,
     }
