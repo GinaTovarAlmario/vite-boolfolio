@@ -1,6 +1,7 @@
 <script>
 import axios from 'axios';
 import ProjectListCard from './ProjectListCard.vue';
+import AppLoader from './AppLoader.vue';
 export default {
     name: 'ProjectList',
     data() {
@@ -10,6 +11,7 @@ export default {
     },
     components: {
         ProjectListCard,
+        AppLoader
     },
     methods: {
         // metodo per recuperare i projects
@@ -33,7 +35,7 @@ export default {
 
 <template>
     <section class="loader">
-
+        <AppLoader/>
     </section>
     <section class="col-12" id="project-list">
         <ProjectListCard 
