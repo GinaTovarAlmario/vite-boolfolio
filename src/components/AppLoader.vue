@@ -55,6 +55,9 @@ export default {
         .face-three{
             transform: rotateY(90deg) translateZ(calc(var(--cube-side-length) / -2)) translateX(calc(var(--cube-side-length) / 2));
         }
+        .face-four{
+            transform: rotateY(0deg) translateZ(calc(var(--cube-side-length) / -1)) translateX(0);
+        }
 
 
     }
