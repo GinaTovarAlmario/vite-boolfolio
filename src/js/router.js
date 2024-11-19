@@ -14,6 +14,7 @@ const routes = [
   { path: '/projects/:id', component: AppSingleProject, name:'projects.show' },
 
 
+
 ]
 
 const router = createRouter({
