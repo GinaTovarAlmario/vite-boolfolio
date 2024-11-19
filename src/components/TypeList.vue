@@ -20,8 +20,8 @@ export default {
         getTypes() {
             axios.get(this.apiUrl)
                 .then((response) => {
-                    console.log(response);
-                    this.typesList = response;
+                    console.log(response.data.results);
+                    this.typesList = response.data.results;
                     this.loaded = true;
                 })
                 .catch(function (error) {
