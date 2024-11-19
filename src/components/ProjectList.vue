@@ -51,6 +51,9 @@ export default {
                 this.getProjects(this.currentPageNumber);
             }
         },
+        showSingleProject(projectId){
+            this.$router.push({ name:this.projects.show, params:{ id:projectId}})
+        }
         
     },
     created() {
