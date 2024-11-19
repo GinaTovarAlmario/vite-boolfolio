@@ -36,7 +36,7 @@ export default {
 </script>
 
 <template>
-    <section class="loader" v-if="!loaded">
+    <section class="loader mb-4 mt-4" v-if="!loaded">
         <AppLoader/>
     </section>
     <section class="col-12" id="project-list"  v-else>
