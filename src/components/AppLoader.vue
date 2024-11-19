@@ -13,12 +13,12 @@ export default {
 <template>
     <div id="loader-cube">
         <div class="cube">
-            <div class="face face-one"></div>
-            <div class="face face-two"></div>
-            <div class="face face-three"></div>
-            <div class="face face-four"></div>
-            <div class="face face-five"></div>
-            <div class="face face-six"></div>
+            <div class="face face-one">1</div>
+            <div class="face face-two">2</div>
+            <div class="face face-three">3</div>
+            <div class="face face-four">4</div>
+            <div class="face face-five">5</div>
+            <div class="face face-six">6</div>
         </div>
     </div>
 </template>
@@ -43,6 +43,10 @@ export default {
             left: 0;
             right: 0;
             border: 5px solid white;
+            font-size: 10vw;
+            color: white;
+            display: flex;
+            justify-content: center;
         }
     }
 
