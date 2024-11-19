@@ -9,6 +9,8 @@ export default {
             projectList: [],
             loaded: false,
             apiUrl: 'http://127.0.0.1:8000/api/projects',
+            lastPageNumber:1,
+            currentPage:1,
         }
     },
     components: {
@@ -27,6 +29,7 @@ export default {
                 .then((response) => {
                     console.log(response.data.results.data);
                     this.projectList = response.data.results.data;
+                    this.lastPageNumber = response.data.results.last_page;
                     this.loaded = true;
                 })
                 .catch(function (error) {
