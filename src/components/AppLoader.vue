@@ -24,7 +24,7 @@ export default {
 </template>
 <style scoped lang="scss">
 #loader-cube{
-    background-color: blueviolet;
+    background-color: white;
     --cube-side-length: 15vw;
     display: flex;
     justify-content: center;
@@ -48,6 +48,7 @@ export default {
             color: white;
             display: flex;
             justify-content: center;
+            background-color: rgba($color: blueviolet, $alpha: 0.85);
         }
         .face-two{
             transform: rotateY(90deg) translateZ(calc(var(--cube-side-length) / 2)) translateX(calc(var(--cube-side-length) / 2));
