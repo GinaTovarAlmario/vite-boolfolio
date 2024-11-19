@@ -58,8 +58,12 @@ export default {
 
     },
     computed:{
+        
+        firstPage(){
+            return this.currentPageNumber == 1;
+        },
         lastPage(){
-            return currentPageNumber >= lastPageNumber
+            return currentPageNumber >= lastPageNumber;
         }
     }
 }
