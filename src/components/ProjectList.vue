@@ -56,6 +56,11 @@ export default {
     created() {
         this.getProjects(1);
 
+    },
+    computed:{
+        lastPage(){
+            return currentPageNumber >= lastPageNumber
+        }
     }
 }
 </script>
@@ -77,7 +82,7 @@ export default {
                 </li>
                 <li>
                     <button class="btn btn-primary" @click="nextPage"
-                        :class="{ 'disabled': currentPageNumber >= lastPageNumber}">
+                        :class="{ 'disabled': }">
                         Next > 
                     </button>
                 </li>
@@ -87,8 +92,5 @@ export default {
 </template>
 
 <style scoped lang="scss">
-main {
-    background-color: blueviolet;
-
-}
+    
 </style>
