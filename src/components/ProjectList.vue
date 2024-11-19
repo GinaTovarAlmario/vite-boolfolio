@@ -36,6 +36,12 @@ export default {
                 .catch(function (error) {
                     console.log(error);
                 })
+        },
+        previousPage(){
+
+        },
+        nextPage(){
+            
         }
     },
     created() {
