@@ -13,7 +13,9 @@ export default {
 <template>
     <div id="loader-cube">
         <div class="cube">
+            <div class="face">
 
+            </div>
         </div>
     </div>
 </template>
@@ -27,7 +29,14 @@ export default {
         width:var(--cube-side-length) ;
         position: relative;
         transform-style: preserve-3d;
+
+        .face{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+        }
     }
+
 
 }
 
