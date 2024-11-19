@@ -76,7 +76,7 @@ export default {
                     </button>
                 </li>
                 <li>
-                    <button class="btn btn-primary">
+                    <button class="btn btn-primary" @click="nextPage">
                         Next > 
                     </button>
                 </li>
