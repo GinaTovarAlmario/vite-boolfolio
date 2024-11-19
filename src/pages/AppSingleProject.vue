@@ -5,21 +5,22 @@ export default {
     name: 'AppSinglePost',
     data() {
         return {
+            singleProject:{},
             apiUrl:'http://127.0.0.1:8000/api/projects',
         }
     },
     methods: {
         getSingleProject() {
-            axios.get(`${this.apiUrl}/${this.route.params.id}`)
+            axios.get(`${this.apiUrl}/${this.$route.params.id}`)
                 .then(function (response) {
                     // handle success
                     console.log(response);
-                    
+                    // this.singleProject = response.data;
                 })
                 .catch(function (error) {
                     // handle error
                     console.log(error);
-                })
+                });
         }
     },
     created(){
