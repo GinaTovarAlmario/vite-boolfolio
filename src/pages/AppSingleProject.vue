@@ -1,18 +1,19 @@
 <script>
+import AppLoader from '../components/AppLoader.vue';
 import ProjectListCard from '../components/ProjectListCard.vue';
 import axios from 'axios';
 export default {
     name: 'AppSinglePost',
     data() {
         return {
-            singleProject:null,
+            singleProject: null,
             apiUrl:'http://127.0.0.1:8000/api/projects',
         }
     },
     methods: {
         getSingleProject() {
             axios.get(`${this.apiUrl}/${this.$route.params.id}`)
-                .then(function (response) {
+                .then((response)=>{
                     // handle success
                     console.log(response.data.results);
                     this.singleProject = response.data.results;
@@ -28,12 +29,21 @@ export default {
     },
     components: {
         ProjectListCard,
+        AppLoader
+    },
+    computed:{
+        loaded(){
+            return this.singleProject !== null;
+        }
     }
 
 }
 </script>
 <template>
-    <ProjectListCard singleProjectObj = "singleProject"/> 
+    <h1>id_ {{ $route.params.id }}</h1>
+    <ProjectListCard :card = "singleProject" v-if="singleProject !== null"/> 
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+
+</style>
