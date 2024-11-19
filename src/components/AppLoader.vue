@@ -24,6 +24,7 @@ export default {
 </template>
 <style scoped lang="scss">
 #loader-cube{
+    height: 100vh;
     background-color: white;
     --cube-side-length: 15vw;
     display: flex;
@@ -36,7 +37,7 @@ export default {
         position: relative;
         transform-style: preserve-3d;
         transform: rotate3d(1,1,1,0deg);
-        animation: rotate360 10s linear infinite;
+        animation: rotate360 5s linear infinite;
 
         .face{
             position: absolute;
@@ -63,7 +64,7 @@ export default {
         .face-five{
             transform: rotateX(90deg) translateY(calc(var(--cube-side-length) / -2)) translateZ(calc(var(--cube-side-length) / -2));
         }
-        .face-five{
+        .face-six{
             transform: rotateX(90deg) translateY(calc(var(--cube-side-length) / -2)) translateZ(calc(var(--cube-side-length) / 2));
         }
     }
