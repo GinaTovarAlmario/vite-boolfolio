@@ -35,6 +35,7 @@ export default {
         width:var(--cube-side-length) ;
         position: relative;
         transform-style: preserve-3d;
+        transform: rotate3d(1,1,1,0deg);
 
         .face{
             position: absolute;
