@@ -21,6 +21,7 @@ export default {
                 .then((response) => {
                     console.log(response.data.results);
                     this.projectList = response.data.results;
+                    this.loaded = true;
                 })
                 .catch(function (error) {
                     console.log(error);
