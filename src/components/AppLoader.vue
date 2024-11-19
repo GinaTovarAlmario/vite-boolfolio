@@ -52,6 +52,10 @@ export default {
         .face-two{
             transform: rotateY(90deg) translateZ(calc(var(--cube-side-length) / 2)) translateX(calc(var(--cube-side-length) / 2));
         }
+        .face-three{
+            transform: rotateY(90deg) translateZ(calc(var(--cube-side-length) / -2)) translateX(calc(var(--cube-side-length) / 2));
+        }
+
 
     }
 
