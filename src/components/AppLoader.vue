@@ -36,6 +36,7 @@ export default {
         position: relative;
         transform-style: preserve-3d;
         transform: rotate3d(1,1,1,0deg);
+        animation: rotate360 10s linear;
 
         .face{
             position: absolute;
