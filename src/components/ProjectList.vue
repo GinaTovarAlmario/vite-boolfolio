@@ -38,10 +38,12 @@ export default {
                 })
         },
         previousPage(){
+            // aggiorna
+            this.currentPageNumber++;
 
         },
         nextPage(){
-            
+
         }
     },
     created() {
