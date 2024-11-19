@@ -65,11 +65,15 @@ export default {
         .face-five{
             transform: rotateX(90deg) translateY(calc(var(--cube-side-length) / -2)) translateZ(calc(var(--cube-side-length) / 2));
         }
-
-
     }
-
-
+}
+@keyframes rotate360{
+    to{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
 }
 
 </style>
+
+
+
