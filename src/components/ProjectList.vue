@@ -30,7 +30,7 @@ export default {
                     console.log(response.data.results.data);
                     this.projectList = response.data.results.data;
                     this.lastPageNumber = response.data.results.last_page;
-                    this.currentPageNumber = response.data.results.pageNumber;
+                    this.currentPageNumber = pageNumber;
                     this.loaded = true;
                 })
                 .catch(function (error) {
