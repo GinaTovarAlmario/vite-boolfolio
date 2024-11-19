@@ -23,6 +23,9 @@ export default {
 #loader-cube{
     background-color: blueviolet;
     --cube-side-length: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .cube{
         height:var(--cube-side-length) ;
