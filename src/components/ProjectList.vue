@@ -18,7 +18,7 @@ export default {
     methods: {
         // metodo per recuperare i projects
         getProjects(pageNumber) {
-            axios.get({
+            axios.get(this.apiUrl, {
                 params: {
                     page:pageNumber,
                 }
