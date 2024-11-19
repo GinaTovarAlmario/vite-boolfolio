@@ -17,7 +17,7 @@ export default {
     methods: {
         // metodo per recuperare i projects
         getProjects() {
-            axios.get('http://127.0.0.1:8000/api/projectss')
+            axios.get('http://127.0.0.1:8000/api/projects')
                 .then((response) => {
                     console.log(response.data.results);
                     this.projectList = response.data.results;
