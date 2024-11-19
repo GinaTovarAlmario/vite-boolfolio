@@ -7,7 +7,8 @@ export default {
     data() {
         return {
             projectList: [],
-            loaded:false,
+            loaded: false,
+            apiUrl: 'http://127.0.0.1:8000/api/projects',
         }
     },
     components: {
@@ -16,8 +17,13 @@ export default {
     },
     methods: {
         // metodo per recuperare i projects
-        getProjects() {
-            axios.get('http://127.0.0.1:8000/api/projects')
+        getProjects(pageNumber) {
+            axios.get({
+                params: {
+                    page:pageNumber,
+                }
+
+                })
                 .then((response) => {
                     console.log(response.data.results.data);
                     this.projectList = response.data.results.data;
@@ -37,13 +43,10 @@ export default {
 
 <template>
     <section class="loader mb-4 mt-4" v-if="!loaded">
-        <AppLoader/>
+        <AppLoader />
     </section>
-    <section class="col-12" id="project-list"  v-else>
-        <ProjectListCard 
-        v-for="projectItem in projectList" 
-        :key="projectItem.id" 
-        :card="projectItem" />
+    <section class="col-12" id="project-list" v-else>
+        <ProjectListCard v-for="projectItem in projectList" :key="projectItem.id" :card="projectItem" />
     </section>
 </template>
 
