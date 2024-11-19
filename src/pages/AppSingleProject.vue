@@ -1,5 +1,6 @@
 <script>
 import ProjectListCard from '../components/ProjectListCard.vue';
+import axios from 'axios';
 export default {
     name: 'AppSinglePost',
     data() {
