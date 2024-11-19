@@ -68,7 +68,16 @@ export default {
         <ProjectListCard v-for="projectItem in projectList" :key="projectItem.id" :card="projectItem" />
     </section>
     <section class="navigation">
-
+        <nav>
+            <ul>
+                <li>
+                    < Prev
+                </li>
+                <li>
+                    > Next
+                </li>
+            </ul>
+        </nav>
     </section>
 </template>
 
