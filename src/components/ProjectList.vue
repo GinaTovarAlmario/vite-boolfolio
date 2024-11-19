@@ -51,7 +51,7 @@ export default {
                 this.getProjects(this.currentPageNumber);
             }
         },
-        }
+        
     },
     created() {
         this.getProjects(1);
@@ -66,6 +66,9 @@ export default {
     </section>
     <section class="col-12" id="project-list" v-else>
         <ProjectListCard v-for="projectItem in projectList" :key="projectItem.id" :card="projectItem" />
+    </section>
+    <section class="navigation">
+
     </section>
 </template>
 
