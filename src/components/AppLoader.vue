@@ -11,8 +11,22 @@ export default {
 }
 </script>
 <template>
-   <h1>
-    loading....
-   </h1>
+    <div id="loader-cube">
+        <div class="cube">
+
+        </div>
+    </div>
 </template>
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+#loader-cube{
+    background-color: blueviolet;
+    --cube-side-length: 15vw;
+
+    .cube{
+        height:var(--cube-side-length) ;
+        width:var(--cube-side-length) ;
+    }
+
+}
+
+</style>
