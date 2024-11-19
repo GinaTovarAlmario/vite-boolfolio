@@ -43,10 +43,14 @@ export default {
                 this.currentPageNumber--;
                 this.getProjects(this.currentPageNumber);
             }
-
         },
         nextPage() {
-
+            if (this.currentPageNumber < this.lastPageNumber) {
+                // aggiorna
+                this.currentPageNumber++;
+                this.getProjects(this.currentPageNumber);
+            }
+        },
         }
     },
     created() {
