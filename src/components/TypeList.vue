@@ -29,7 +29,7 @@ export default {
                 })
         },
         showSingleType(typeId){
-            this.$router.push({ name:'types.show', params:{ id:typeId}})
+            this.$router.push({ name:'types.show', params:{ id: typeId}})
         }
         
     },
@@ -48,7 +48,7 @@ export default {
         <TypeListCard v-for="type in typesList" 
         :key="type.id" 
         :typeObj="type" 
-        @click="showSingleProject(type.id)"/>
+        @click="showSingleType(type.id)"/>
     </section>
     <section class="navigation">
         
