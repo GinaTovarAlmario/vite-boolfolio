@@ -52,7 +52,7 @@ export default {
             }
         },
         showSingleProject(projectId){
-            this.$router.push({ name:this.projects.show, params:{ id:projectId}})
+            this.$router.push({ name:'projects.show', params:{ id:projectId}})
         }
         
     },
