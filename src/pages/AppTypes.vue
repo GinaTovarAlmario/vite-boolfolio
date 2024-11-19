@@ -1,6 +1,5 @@
 <script>
-import ProjectList from '../components/ProjectList.vue';
-
+import TypeList from '../components/TypeList.vue';
 export default {
     name: 'AppProjects',
     data() {
@@ -8,7 +7,7 @@ export default {
         }
     },
     components: {
-        ProjectList,
+        TypeList,
     }
 
 }
@@ -24,7 +23,7 @@ export default {
                     </h2>
                 </div>
                 <div class="col-8 m-auto">
-                    <ProjectList/>
+                    <TypeList/>
                 </div>
             </div>
         </div>
