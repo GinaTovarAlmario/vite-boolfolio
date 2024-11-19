@@ -69,12 +69,16 @@ export default {
     </section>
     <section class="navigation">
         <nav>
-            <ul>
+            <ul class="d-flex justify-content-between">
                 <li>
-                    < Prev
+                    <button class="btn btn-primary">
+                        < Prev
+                    </button>
                 </li>
                 <li>
-                    > Next
+                    <button class="btn btn-primary">
+                        Next > 
+                    </button>
                 </li>
             </ul>
         </nav>
