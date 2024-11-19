@@ -11,7 +11,6 @@ export default {
 
 }
 </script>
-
 <template>
     <main>
         <div class="container">
