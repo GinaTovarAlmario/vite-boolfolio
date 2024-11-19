@@ -26,6 +26,7 @@ export default {
         height:var(--cube-side-length) ;
         width:var(--cube-side-length) ;
         position: relative;
+        transform-style: preserve-3d;
     }
 
 }
