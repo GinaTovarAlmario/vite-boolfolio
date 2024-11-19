@@ -15,7 +15,7 @@ export default {
                 .then(function (response) {
                     // handle success
                     console.log(response.data.results);
-                    // this.singleProject = response.data;
+                    this.singleProject = response.data.results;
                 })
                 .catch(function (error) {
                     // handle error
