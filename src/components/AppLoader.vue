@@ -25,6 +25,7 @@ export default {
     .cube{
         height:var(--cube-side-length) ;
         width:var(--cube-side-length) ;
+        position: relative;
     }
 
 }
