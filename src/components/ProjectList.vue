@@ -71,7 +71,7 @@ export default {
         <nav>
             <ul class="d-flex justify-content-between">
                 <li>
-                    <button class="btn btn-primary">
+                    <button class="btn btn-primary" @click="previousPage">
                         < Prev
                     </button>
                 </li>
